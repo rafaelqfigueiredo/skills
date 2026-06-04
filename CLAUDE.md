@@ -79,10 +79,11 @@ Release flow:
 
 1. Lint passes (`python3 scripts/lint-skills.py`).
 2. Bump both manifests to the new version.
-3. Rename `## master` → `## <version> (<date>)` in `CHANGELOG.md`; add a fresh `## master` above it.
-4. Commit and tag (`git tag v<version>`).
+3. In `CHANGELOG.md`: rename `## master` → `## <version> (<date>)` and add a fresh empty `## master` block above it.
+4. Commit all three together (plugin files + both manifests + `CHANGELOG.md`) in a single commit.
+5. Tag: `git tag v<version>`.
 
-**Every user-visible change must update all three in the same commit: the plugin files, both manifests, and `CHANGELOG.md`. Never commit plugin changes without also bumping the version and logging the change.**
+**All three must change in the same commit: plugin files, both manifests, and `CHANGELOG.md` with the version block renamed. Never commit plugin changes without bumping the version and renaming the CHANGELOG block. A `## master` section with no version underneath it means the release is incomplete.**
 
 ## Authoring a new skill
 
