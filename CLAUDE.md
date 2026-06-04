@@ -101,5 +101,6 @@ See [fig/skills/fig/write-a-skill/SKILL.md](fig/skills/fig/write-a-skill/SKILL.m
 - **Agent naming** — use the `-er` / `-or` suffix to match existing convention (e.g., `fig-reviewer`, `fig-planner`). Command files use the bare verb (e.g., `commands/plan.md` for `/fig:plan`).
 - **Agent frontmatter** — only `name:` and `description:`. No `model:` attribute (removed for harness compatibility; let consumers pick).
 - **Commands launch agents by `name:`**, not file path. Keep both in sync if you rename one.
+- **Workflows belong in the skill, not the agent** — put multi-step processes in `skills/<plugin>/<skill>/workflows/`. Agents and commands reference them by path (`skills/fig/<skill>/workflows/<flow>.md`). This keeps agents thin, makes workflows reusable across commands and agents, and reduces token usage by loading only what's needed.
 - **Reference structure** — group references by kind (`core/`, `patterns/`, `anti-patterns/`, `topics/`, `gems/`, `examples/`). New references go under the matching kind; create a new kind only if no existing one fits.
 - **Don't commit/push without explicit ask.** Show the diff and wait.

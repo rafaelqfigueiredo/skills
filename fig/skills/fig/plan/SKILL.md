@@ -8,41 +8,22 @@ lint-skip:
 
 # Framework-Aware Planning
 
-## Process
+## Stack signals
 
-### Step 1 — Detect the stack
+| File                                  | Framework        |
+| ------------------------------------- | ---------------- |
+| `Gemfile`                             | Ruby / Rails     |
+| `package.json`                        | Node / JS / TS   |
+| `go.mod`                              | Go               |
+| `pyproject.toml` / `requirements.txt` | Python           |
+| `Cargo.toml`                          | Rust             |
+| `mix.exs`                             | Elixir / Phoenix |
 
-Scan the repo root (and subdirectories for monorepos) for framework signals:
+For monorepos, detect per subdirectory. Load the matching reference from `references/` if one exists; proceed without it if not.
 
-| File | Framework |
-|---|---|
-| `Gemfile` | Ruby / Rails |
-| `package.json` | Node / JS / TS |
-| `go.mod` | Go |
-| `pyproject.toml` / `requirements.txt` | Python |
-| `Cargo.toml` | Rust |
-| `mix.exs` | Elixir / Phoenix |
+## Workflows
 
-For monorepos, list all detected frameworks and note which subdirectory each lives in.
-
-### Step 2 — Load conventions
-
-For each detected framework, check if a matching reference file exists under `references/`. Load it if present; proceed without it if not.
-
-### Step 3 — Search prior solutions
-
-Before planning, search `docs/solutions/` for entries relevant to the feature or domain. Prefer decisions already made in this codebase over generic patterns.
-
-### Step 4 — Produce the plan
-
-Output a structured plan with:
-
-1. **Goal** — one sentence describing what will be built
-2. **Stack context** — detected framework(s) and any relevant prior solutions
-3. **Approach** — implementation strategy referencing loaded conventions where applicable
-4. **Steps** — ordered, concrete steps small enough to execute one at a time
-5. **Tests** — what to verify and how
-6. **Open questions** — decisions needed before work starts
+- [Planning flow](workflows/planning-flow.md) — full session: grill → detect → PRD → plan → backlog
 
 ## Conventions
 
