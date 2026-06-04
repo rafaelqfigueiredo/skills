@@ -1,5 +1,7 @@
 ## master
 
+## 0.2.0 (2026-06-05)
+
 - Added `/fig:plan` command and `fig-planner` agent for framework-aware feature planning with grill-me, PRD, implementation plan, and backlog decomposition stored in `.plans/`.
 
 ## 0.1.0 (2026-06-04)
