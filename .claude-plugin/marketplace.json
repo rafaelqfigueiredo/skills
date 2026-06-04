@@ -1,0 +1,34 @@
+{
+  "name": "rafaelqfigueiredo-skills",
+  "owner": {
+    "name": "Rafael Figueiredo",
+    "url": "https://github.com/rafaelqfigueiredo"
+  },
+  "metadata": {
+    "description": "A collection of Claude Code skills by Rafael Figueiredo",
+    "version": "0.0.1"
+  },
+  "plugins": [
+    {
+      "name": "fig",
+      "description": "A collection of Claude Code skills by Rafael Figueiredo",
+      "version": "0.0.1",
+      "author": {
+        "name": "Rafael Figueiredo",
+        "url": "https://github.com/rafaelqfigueiredo"
+      },
+      "homepage": "https://github.com/rafaelqfigueiredo/skills",
+      "tags": [
+        "rails",
+        "ruby",
+        "architecture",
+        "productivity",
+        "code-review",
+        "planning",
+        "reviewing",
+        "development"
+      ],
+      "source": "./fig"
+    }
+  ]
+}

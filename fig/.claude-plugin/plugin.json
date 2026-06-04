@@ -1,0 +1,11 @@
+{
+  "name": "fig",
+  "version": "0.0.1",
+  "description": "A collection of Claude Code skills by Rafael Figueiredo",
+  "author": {
+    "name": "Rafael Figueiredo",
+    "url": "https://github.com/rafaelqfigueiredo"
+  },
+  "repository": "https://github.com/rafaelqfigueiredo/skills",
+  "license": "MIT"
+}
