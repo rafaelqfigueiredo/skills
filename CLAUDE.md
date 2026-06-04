@@ -27,7 +27,7 @@ Agentic guidance for developing skills in this repo. Skills _usage_ lives in eac
 
 Skip dev/tooling-only changes (lint scripts, CI workflows, hooks, internal refactors of scripts). Only user-visible plugin changes belong here.
 
-On release, rename `## master` to `## <version>` and start a fresh `## master` block above it.
+On release, rename `## master` to `## <version> (<date>)` (e.g. `## 0.1.0 (2026-06-04)`) and start a fresh `## master` block above it.
 
 ## Linting
 
