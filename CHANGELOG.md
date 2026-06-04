@@ -1,5 +1,7 @@
 ## master
 
+- Added `/fig:plan` command for framework-aware feature planning with Rails, Node/TS, and general conventions.
+
 ## 0.1.0 (2026-06-04)
 
 - Added `/fig:handoff` command to compact the current conversation into a handoff document for a fresh agent.
