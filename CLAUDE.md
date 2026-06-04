@@ -82,6 +82,8 @@ Release flow:
 3. Rename `## master` → `## <version> (<date>)` in `CHANGELOG.md`; add a fresh `## master` above it.
 4. Commit and tag (`git tag v<version>`).
 
+**Every user-visible change must update all three in the same commit: the plugin files, both manifests, and `CHANGELOG.md`. Never commit plugin changes without also bumping the version and logging the change.**
+
 ## Authoring a new skill
 
 Use the `/fig:write-a-skill` skill to scaffold and validate new skills.

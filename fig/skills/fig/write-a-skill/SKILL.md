@@ -102,3 +102,5 @@ Split when SKILL.md would exceed 100 lines or content has distinct domains. Put 
 - [ ] Scripts list required packages; MCP tools use `ServerName:tool_name` form
 - [ ] Script degree of freedom matches operation fragility
 - [ ] Lint passes: `python3 scripts/lint-skills.py`
+- [ ] `CHANGELOG.md` updated under `## master`
+- [ ] Both manifests bumped to the new version (minor bump for new skills/commands)
